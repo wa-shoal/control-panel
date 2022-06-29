@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+h1 {
+    padding-top: 20px;
+}
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.control-container {
+    display: grid;
+    grid-template-columns: 0.75fr 3fr;
+    gap: 20px;
+}
+.control-tabs-container {
+    margin-top: 35%;
+}
+.control-tab {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 8px 4px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 85%;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.control-tab:hover {
+    transform: scale(1.04);
+}
+.control-image-container {
+    position: relative;
+}
+@keyframes circleAnimate {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.5);
+    }
+}
+.control-circles {
+    position: absolute;
+    border-radius: 50px;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    display: none;
+    animation: circleAnimate 0.5s ease-in-out infinite alternate;
+}
+.control-circles:hover {
+    animation: none;
+}
+.tri-rated-circles {
+    background: #e87200;
+    left: 25%;
+}
+.panel-trunking-circles {
+    background: yellow;
+    left: 15%;
+}
+.heat-shrink-markers-circles {
+    background: green;
+}
+.tri-top-circle {
+    top: 31%;
+}
+.tri-bottom-circle {
+    bottom: 35%;
+}
+.panel-trunking-top-circle {
+    top: 43%;
+}
+.panel-trunking-bottom-circle {
+    bottom: 38.5%;
+}
+.heat-shrink-markers-top-circle {
+    top: 30%;
+    right: 54%;
+}
+.heat-shrink-markers-middle-circle {
+    bottom: 51.5%;
+    right: 65.5%;
+}
+.heat-shrink-markers-bottom-circle {
+    bottom: 41.5%;
+    right: 62%;
+}
+.show-circle {
+    display: block;
+}
+.control-tab-orange {
+    background: #e87200;
+    border: none;
+    color: #fff;
+}
+.control-tab-yellow {
+    background: yellow;
+    border: none;
+    color: #000;
+}
+.control-tab-green {
+    background: green;
+    border: none;
+    color: #fff;
+}
+.control-product-content-container {
+    position: absolute;
+    background: #fff;
+    width: 38.5%;
+    padding: 15px;
+    box-shadow: 1px 1px 4px 1px #888;
+    top: 50%;
+    border-bottom-right-radius: 20px;
+    right: -105%;
+}
+.show-control-content {
+    right: 0;
+    transition: 0.3s ease-in-out;
+}
+.control-content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.control-product-image {
+    width: 25%;
+}
+.control-product-content {
+    margin-left: 5%;
+    width: 70%;
+}
+.control-content-btn {
+    background: #e87200;
+    color: #fff;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+}
+.control-content-btn:hover {
+    background: #004d71;
+}
+.control-product-content p {
+    font-size: 14px;
+    line-height: 16px;
+    padding: 7px 0 14px 0;
+    font-weight: 500;
+}
+.control-product-content h2 {
+    font-size: 16px;
+    color: #004d71;
+}
+.control-product-content-container a {
+    color: #000;
+}
+.close-control-content {
+    position: absolute;
+    right: 4px;
+    top: -4px;
+    font-size: 38px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+@media (max-width: 660px) {
+.container {
+    padding: 15px;
+}
+.control-container {
+    display: block;
+}
+.control-tabs-container {
+    margin-top: 8%;
+}
+.control-tab {
+    width: 100%;
+}
+.control-tab:hover {
+    transform: scale(1);
+}
+.control-product-content-container {
+    width: 90%;
+    top: 100%;
+}
+.control-product-content p {
+    font-size: 12px;
+    line-height: 14px;
+}
+.control-circles {
+    height: 18px;
+    width: 18px;;
+}
+}
