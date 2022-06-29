@@ -20,8 +20,9 @@ h1 {
 }
 .control-container {
     display: grid;
-    grid-template-columns: 0.75fr 3fr;
+    grid-template-columns: 0.75fr 2fr;
     gap: 20px;
+    position: relative;
 }
 .control-tabs-container {
     margin-top: 35%;
@@ -122,12 +123,12 @@ h1 {
     width: 38.5%;
     padding: 15px;
     box-shadow: 1px 1px 4px 1px #888;
-    top: 50%;
+    top: -100%;
     border-bottom-right-radius: 20px;
-    right: -105%;
+    right: 0;
 }
 .show-control-content {
-    right: 0;
+    top: 45%;
     transition: 0.3s ease-in-out;
 }
 .control-content-wrapper {
