@@ -55,8 +55,8 @@ h1 {
 .control-circles {
     position: absolute;
     border-radius: 50px;
-    height: 26px;
-    width: 26px;
+    height: 30px;
+    width: 30px;
     cursor: pointer;
     display: none;
     animation: circleAnimate 0.5s ease-in-out infinite alternate;
