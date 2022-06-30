@@ -63,7 +63,9 @@ h1 {
     border: 3px solid #fff;
 }
 .control-circles:hover {
-    animation: none;
+    transform: scale(1.3);
+    transition: ease-in-out 0.2s;
+    background: none;
 }
 .tri-rated-circles {
     background: #e87200;
@@ -83,13 +85,13 @@ h1 {
     bottom: 35%;
 }
 .panel-trunking-top-circle {
-    top: 43%;
+    top: 42.5%;
 }
 .panel-trunking-bottom-circle {
-    bottom: 38.5%;
+    bottom: 38.3%;
 }
 .heat-shrink-markers-top-circle {
-    top: 30%;
+    top: 29%;
     right: 54%;
 }
 .heat-shrink-markers-middle-circle {
